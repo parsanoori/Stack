@@ -1,4 +1,3 @@
-
 #include "Stack.h"
 
 template <typename T>
@@ -15,16 +14,17 @@ void Stack<T>::pop()
 template <typename T>
 void Stack<T>::push(const T& data)
 {
-
-	if (!top_ptr)
+	size++;
+	if (!top_ptr){
 		top_ptr = new Node { data, nullptr };
+		return;
+	}
 	Stack<T>::Node* new_node = new Node { data, top_ptr };
 	top_ptr = new_node;
-	size++;
 }
 
 template <typename T>
-const T& Stack<T>::top()
+const T Stack<T>::top()
 {
 	if (!top_ptr)
 		throw new std::runtime_error("Stack is empty");
