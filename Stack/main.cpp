@@ -13,5 +13,12 @@ int main()
 	cout << newStack.top() << endl;
 	newStack.pop();
 	cout << newStack.top() << endl;
+	newStack.pop();
+	newStack.push(3);
+	std::cout << newStack.top() << endl;
+	std::cout << newStack.isEmpty() << std::endl;
+	newStack.pop();
+	std::cout << "isEmpty : " << newStack.getSize() << std::endl;
+	std::cout << newStack.isEmpty() << std::endl;
 	return 0;
 }

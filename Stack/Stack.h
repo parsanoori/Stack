@@ -19,7 +19,7 @@ class Stack {
 
 	void push(const T& data);
 
-	const T& top();
+	const T top();
 
 	bool isEmpty();
 	int getSize();

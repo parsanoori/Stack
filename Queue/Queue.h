@@ -17,9 +17,9 @@ class Queue{
 	public:
 
 	void enqueue(const T& data);
-	const T& dequeue();
-	const T& front();
-	const T& rear();
+	const T dequeue();
+	const T front();
+	const T rear();
 	bool isEmpty();
 	int getSize();
 

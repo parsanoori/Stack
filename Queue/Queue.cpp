@@ -19,7 +19,7 @@ void Queue<T>::enqueue(const T& data)
 }
 
 template <typename T>
-const T& Queue<T>::dequeue()
+const T Queue<T>::dequeue()
 {
 	if (size == 0)
 		throw std::runtime_error { "Queue is empty" };
@@ -32,13 +32,13 @@ const T& Queue<T>::dequeue()
 }
 
 template <typename T>
-const T& Queue<T>::front()
+const T Queue<T>::front()
 {
 	return front_ptr->data;
 }
 
 template <typename T>
-const T& Queue<T>::rear()
+const T Queue<T>::rear()
 {
 	return rear_ptr->data;
 }
