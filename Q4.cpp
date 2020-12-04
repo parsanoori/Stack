@@ -2,6 +2,15 @@
 #include "Stack/Stack.h"
 using namespace std;
 
+/**
+ * See that for loop bro ?
+ * It iterates through string char by char
+ * see that loop body bro ?
+ * it's all constant to n which is length of
+ * string
+ * Thats it, therefore the time complexity is
+ * theta(n) ;)
+ */
 string postfixToPrefix(string postfix)
 {
 	Stack<string> stackEAziz;
